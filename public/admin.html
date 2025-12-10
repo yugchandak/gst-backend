@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GST Admin Portal</title>
+  <link rel="stylesheet" href="/admin/admin.css">
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>GST Admin Portal</h1>
+      <div class="status" id="status"></div>
+    </header>
+
+    <section>
+      <h2>User Registration</h2>
+      <form id="user-form" class="card">
+        <label>Phone* <input name="phone" required placeholder="9999999999"></label>
+        <label>Name <input name="name" placeholder="User name"></label>
+        <label>Email <input name="email" type="email" placeholder="user@example.com"></label>
+        <label>Company <input name="company" placeholder="Company"></label>
+        <label>Notes <textarea name="notes" rows="2" placeholder="Notes"></textarea></label>
+        <button type="submit">Register User</button>
+      </form>
+      <div class="small" id="users-count"></div>
+    </section>
+
+    <section>
+      <h2>Upload GST PDF</h2>
+      <form id="pdf-form" class="card">
+        <label>PDF File <input type="file" name="pdf" accept="application/pdf" required></label>
+        <button type="submit">Upload & Extract</button>
+      </form>
+      <div class="small" id="pdf-status"></div>
+    </section>
+
+    <section>
+      <h2>Push Notification</h2>
+      <form id="notify-form" class="card">
+        <label>Title* <input name="title" required></label>
+        <label>Message* <textarea name="message" rows="2" required></textarea></label>
+        <button type="submit">Send Notification</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Add Article / Case Law / Circular</h2>
+      <form id="content-form" class="card">
+        <label>Kind
+          <select name="kind">
+            <option value="article">Article</option>
+            <option value="caseLaw">Case Law</option>
+            <option value="circular">Circular</option>
+          </select>
+        </label>
+        <label>Title* <input name="title" required></label>
+        <label>Category <input name="category" placeholder="Auto-set if empty"></label>
+        <label>Date <input name="date" placeholder="20 Oct 2025"></label>
+        <label>Author <input name="author" placeholder="Author"></label>
+        <button type="submit">Add Content</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Live Data Snapshot</h2>
+      <div id="snapshot" class="card"></div>
+    </section>
+  </div>
+
+  <script src="/admin/admin.js"></script>
+</body>
+</html>

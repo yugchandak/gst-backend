@@ -1,0 +1,232 @@
+{
+  "sets": [
+    {
+      "title": "GST Updates – October 2025",
+      "items": 12,
+      "tag": "Latest updates",
+      "isNew": true
+    },
+    {
+      "title": "Case Law & Judicial Decisions",
+      "items": 8,
+      "tag": "Legal References",
+      "isNew": false
+    },
+    {
+      "title": "Compliance Circulars & Notices",
+      "items": 6,
+      "tag": "Compliance",
+      "isNew": false
+    },
+    {
+      "title": "ITC & Cess Issues – October 2025",
+      "items": 12,
+      "tag": "Guides",
+      "isNew": true
+    }
+  ],
+  "articles": [
+    {
+      "title": "Cess Scrapped — Effect on Various Sectors",
+      "category": "Updates",
+      "date": "20 Oct 2025",
+      "author": "CA Ajay Joshi"
+    },
+    {
+      "title": "Fraudulent ITC — Ambika Traders Case Analysed",
+      "category": "Case Law",
+      "date": "20 Oct 2025",
+      "author": "CA D. Garg"
+    },
+    {
+      "title": "56th GST Council Meeting – Key Decisions",
+      "category": "Updates",
+      "date": "18 Oct 2025",
+      "author": "CBIC"
+    },
+    {
+      "title": "GST Rate Rationalization 2025 – Comprehensive Guide",
+      "category": "Guides",
+      "date": "15 Oct 2025",
+      "author": "CA Priya Sharma"
+    },
+    {
+      "title": "Input Tax Credit – Recent Court Rulings",
+      "category": "Case Law",
+      "date": "12 Oct 2025",
+      "author": "Legal Team"
+    },
+    {
+      "title": "Compensation Cess Refund – Options Explained",
+      "category": "Educational",
+      "date": "10 Oct 2025",
+      "author": "Tax Experts"
+    },
+    {
+      "title": "Automobile Sector – Impact of Cess Scrapping",
+      "category": "Analysis",
+      "date": "08 Oct 2025",
+      "author": "Industry Research"
+    },
+    {
+      "title": "Beverages Industry – Tax Planning After Cess Removal",
+      "category": "Analysis",
+      "date": "05 Oct 2025",
+      "author": "Sector Analysis"
+    },
+    {
+      "title": "Circular No. 253/10/2025-GST – Key Highlights",
+      "category": "Circulars",
+      "date": "01 Oct 2025",
+      "author": "CBIC"
+    },
+    {
+      "title": "Section 16(2)(c) CGST Act – Constitutional Validity",
+      "category": "Legal",
+      "date": "28 Sep 2025",
+      "author": "Delhi High Court"
+    },
+    {
+      "title": "Anti-Profiteering Provisions – Latest Updates",
+      "category": "Compliance",
+      "date": "25 Sep 2025",
+      "author": "Compliance Team"
+    },
+    {
+      "title": "E-Invoice Mandate – Implementation Status",
+      "category": "Updates",
+      "date": "22 Sep 2025",
+      "author": "E-commerce Department"
+    },
+    {
+      "title": "Ambika Traders Judgment – Supreme Court Dismisses SLP",
+      "category": "Case Law",
+      "date": "01 Sep 2025",
+      "author": "Supreme Court of India"
+    }
+  ],
+  "trending": [
+    {
+      "title": "Compensation Cess Scrapping 2025",
+      "results": 324,
+      "rank": 1
+    },
+    {
+      "title": "Fraudulent ITC Claims and Penalties",
+      "results": 256,
+      "rank": 2
+    },
+    {
+      "title": "GST Rate Rationalization",
+      "results": 189,
+      "rank": 3
+    },
+    {
+      "title": "Input Tax Credit Disputes",
+      "results": 142,
+      "rank": 4
+    },
+    {
+      "title": "E-Invoice and Compliance",
+      "results": 98,
+      "rank": 5
+    },
+    {
+      "title": "Anti-Profiteering Mechanism",
+      "results": 87,
+      "rank": 6
+    },
+    {
+      "title": "Reverse Charge Mechanism",
+      "results": 76,
+      "rank": 7
+    },
+    {
+      "title": "GST Annual Return (GSTR-9)",
+      "results": 65,
+      "rank": 8
+    }
+  ],
+  "plans": [
+    {
+      "name": "GST Compliance Suite",
+      "category": "Compliance",
+      "description": "Complete GST compliance tools including checklist, forms, and automated calculations for all types of businesses",
+      "price": "₹4,999",
+      "savings": "Save 20%",
+      "url": "https://profinss.com/products/gst-compliance-suite/"
+    },
+    {
+      "name": "ITC & Refund Guide",
+      "category": "Educational",
+      "description": "Comprehensive guide on Input Tax Credit, refund procedures, and ITC eligibility criteria with case studies",
+      "price": "₹2,999",
+      "savings": "",
+      "url": "https://profinss.com/products/itc-refund-guide/"
+    },
+    {
+      "name": "GST Case Law Library",
+      "category": "Legal",
+      "description": "Curated library of important GST case law, judicial decisions, and landmark rulings from various high courts",
+      "price": "₹5,999",
+      "savings": "Save 15%",
+      "url": "https://profinss.com/products/case-law-library/"
+    },
+    {
+      "name": "Rate Rationalization Toolkit",
+      "category": "Compliance",
+      "description": "Updated tax rate tables, impact analysis, and compliance checklist for GST 2.0 implementation",
+      "price": "₹3,499",
+      "savings": "Save 10%",
+      "url": "https://profinss.com/products/rate-rationalization-toolkit/"
+    },
+    {
+      "name": "Anti-Profiteering Compliance",
+      "category": "Legal",
+      "description": "Complete guide to Section 171, anti-profiteering rules, and recent judgments with implementation strategies",
+      "price": "₹3,999",
+      "savings": "",
+      "url": "https://profinss.com/products/anti-profiteering-compliance/"
+    },
+    {
+      "name": "E-Invoice & GSTR-1 Mastery",
+      "category": "Educational",
+      "description": "Step-by-step guide for e-invoice generation, GSTR-1 filing, and reconciliation with practical examples",
+      "price": "₹2,499",
+      "savings": "Save 15%",
+      "url": "https://profinss.com/products/e-invoice-gstr1-mastery/"
+    }
+  ],
+  "aiMessages": [
+    {
+      "isUser": true,
+      "message": "What is the compensation cess scrapping impact on my inventory?",
+      "time": "10:30 AM"
+    },
+    {
+      "isUser": false,
+      "message": "The compensation cess has been scrapped with effect from 22.9.2025 for all items except tobacco products. According to CBIC clarification, no refund or adjustment will be provided for cess already paid on inventory held as of that date. The cess credit can only be adjusted against cess liability and cannot be set-off against CGST/SGST/IGST. This impacts the automobile and beverage sectors particularly.",
+      "time": "10:31 AM"
+    },
+    {
+      "isUser": true,
+      "message": "Can I claim ITC on inputs from non-credible suppliers?",
+      "time": "10:45 AM"
+    },
+    {
+      "isUser": false,
+      "message": "No, according to the recent Ambika Traders judgment from Delhi High Court, ITC cannot be claimed on invoices from fake or non-existent suppliers. The Court held that consolidated SCNs covering multiple years are valid in ITC fraud cases. If you claim ITC on fake invoices, penalties equal to the ITC amount plus additional penalty under Section 122 can be imposed.",
+      "time": "10:46 AM"
+    },
+    {
+      "isUser": true,
+      "message": "What are the key changes in GST 2.0?",
+      "time": "11:00 AM"
+    },
+    {
+      "isUser": false,
+      "message": "The 56th GST Council Meeting introduced GST 2.0 with major changes including: (1) Removal of compensation cess for most items, (2) Rationalization of tax rates, (3) Simplified compliance procedures, (4) Enhanced e-commerce provisions. The transition is effective from 22.9.2025. Affected businesses need to revalue inventory and adjust pricing strategies.",
+      "time": "11:01 AM"
+    }
+  ]
+}
