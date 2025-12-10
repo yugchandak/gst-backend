@@ -2,6 +2,9 @@
 
 Backend server for GST information app with zero dependencies.
 
+## Live Deployment
+🔗 **Live API**: https://gst-backend-qfyz.onrender.com
+
 ## Deployment Guide
 
 ### Render.com (Recommended - FREE)
@@ -15,6 +18,8 @@ Backend server for GST information app with zero dependencies.
 
 ## Endpoints
 - `GET /api/health` – Returns dashboard data with all articles, sets, and counts
+- `GET /admin` – Admin dashboard interface
+- `GET /extract` – PDF extraction tool interface
 - `GET /admin/api/health` – Admin health check
 
 ## Run locally
