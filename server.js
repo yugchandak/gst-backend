@@ -122,6 +122,73 @@ function parseBody(req) {
   });
 }
 
+function handleMultipartUpload(req, res) {
+  const boundary = req.headers['content-type']?.split('boundary=')[1];
+  if (!boundary) {
+    return send(res, 400, { error: 'No boundary found' });
+  }
+
+  let buffer = Buffer.alloc(0);
+  
+  req.on('data', chunk => {
+    buffer = Buffer.concat([buffer, chunk]);
+    if (buffer.length > 50 * 1024 * 1024) {
+      return send(res, 413, { error: 'File too large' });
+    }
+  });
+
+  req.on('end', async () => {
+    try {
+      const parts = buffer.toString('binary').split('--' + boundary);
+      let pdfBuffer = null;
+      let fileName = 'upload.pdf';
+
+      for (const part of parts) {
+        if (part.includes('Content-Type: application/pdf')) {
+          const nameMatch = part.match(/filename="([^"]+)"/);
+          if (nameMatch) fileName = nameMatch[1];
+          
+          const dataStart = part.indexOf('\r\n\r\n') + 4;
+          const dataEnd = part.lastIndexOf('\r\n');
+          pdfBuffer = Buffer.from(part.substring(dataStart, dataEnd), 'binary');
+          break;
+        }
+      }
+
+      if (!pdfBuffer) {
+        return send(res, 400, { error: 'No PDF file found in upload' });
+      }
+
+      const safeName = `${Date.now()}-${fileName.replace(/\s+/g, '_')}`;
+      const dest = path.join(UPLOADS_DIR, safeName);
+      fs.writeFileSync(dest, pdfBuffer);
+
+      try {
+        const stats = await runExtraction(dest);
+        return send(res, 200, {
+          success: true,
+          message: 'PDF uploaded and data extracted successfully',
+          fileName: safeName,
+          ...stats
+        });
+      } catch (extractErr) {
+        return send(res, 200, {
+          success: false,
+          message: 'PDF uploaded but extraction failed',
+          fileName: safeName,
+          error: extractErr.message
+        });
+      }
+    } catch (err) {
+      return send(res, 500, { error: 'Upload processing failed: ' + err.message });
+    }
+  });
+
+  req.on('error', (err) => {
+    send(res, 500, { error: err.message });
+  });
+}
+
 function persistData() {
   const target = fs.existsSync(GST_DATA_PATH) ? GST_DATA_PATH : DB_PATH;
   fs.writeFileSync(target, JSON.stringify(cache, null, 2));
@@ -158,7 +225,19 @@ function runExtraction(pdfPath) {
     proc.on('close', code => {
       if (code === 0) {
         cache = loadDatabase();
-        resolve();
+        const gstData = loadGSTData();
+        const stats = {
+          totalArticles: cache.articles.length,
+          categories: {}
+        };
+        
+        // Count articles by category
+        cache.articles.forEach(article => {
+          const cat = article.category || 'Other';
+          stats.categories[cat] = (stats.categories[cat] || 0) + 1;
+        });
+        
+        resolve(stats);
       } else {
         reject(new Error(stderr || 'Extraction failed'));
       }
@@ -183,18 +262,24 @@ const server = http.createServer((req, res) => {
     url.pathname = url.pathname.replace('/admin/api/', '/api/');
   }
 
-    // Admin static assets
-    if (req.method === 'GET' && (url.pathname === '/admin' || url.pathname === '/admin/')) {
-      const filePath = path.join(PUBLIC_DIR, 'admin.html');
-      return serveStatic(res, filePath, 'text/html');
-    }
-    if (req.method === 'GET' && url.pathname.startsWith('/admin/')) {
-      const safePath = url.pathname.replace('/admin/', '');
-      const filePath = path.join(PUBLIC_DIR, safePath);
-      const ext = path.extname(filePath);
-      const type = ext === '.js' ? 'application/javascript' : ext === '.css' ? 'text/css' : 'text/plain';
-      return serveStatic(res, filePath, type);
-    }
+  // PDF Extraction Tool
+  if (req.method === 'GET' && (url.pathname === '/extract' || url.pathname === '/extract/')) {
+    const filePath = path.join(PUBLIC_DIR, 'extract.html');
+    return serveStatic(res, filePath, 'text/html');
+  }
+
+  // Admin static assets
+  if (req.method === 'GET' && (url.pathname === '/admin' || url.pathname === '/admin/')) {
+    const filePath = path.join(PUBLIC_DIR, 'admin.html');
+    return serveStatic(res, filePath, 'text/html');
+  }
+  if (req.method === 'GET' && url.pathname.startsWith('/admin/')) {
+    const safePath = url.pathname.replace('/admin/', '');
+    const filePath = path.join(PUBLIC_DIR, safePath);
+    const ext = path.extname(filePath);
+    const type = ext === '.js' ? 'application/javascript' : ext === '.css' ? 'text/css' : 'text/plain';
+    return serveStatic(res, filePath, type);
+  }
   if (req.method === 'GET' && url.pathname === '/api/health') {
     return send(res, 200, {
       status: 'ok',
@@ -284,6 +369,10 @@ const server = http.createServer((req, res) => {
         return send(res, 201, entry);
       })
       .catch(err => send(res, 400, { error: err.message }));
+  }
+
+  if (req.method === 'POST' && url.pathname === '/api/upload') {
+    return handleMultipartUpload(req, res);
   }
 
   if (req.method === 'POST' && url.pathname === '/api/upload/pdf') {

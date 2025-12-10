@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GST PDF Data Extraction Tool</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 800px;
+            width: 100%;
+            padding: 40px;
+        }
+        
+        h1 {
+            color: #2d3748;
+            font-size: 32px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        
+        .subtitle {
+            color: #718096;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+        
+        .upload-area {
+            border: 3px dashed #cbd5e0;
+            border-radius: 12px;
+            padding: 40px;
+            text-align: center;
+            background: #f7fafc;
+            margin-bottom: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .upload-area:hover {
+            border-color: #667eea;
+            background: #edf2f7;
+        }
+        
+        .upload-area.dragover {
+            border-color: #667eea;
+            background: #e6fffa;
+        }
+        
+        .upload-icon {
+            font-size: 48px;
+            color: #a0aec0;
+            margin-bottom: 15px;
+        }
+        
+        input[type="file"] {
+            display: none;
+        }
+        
+        .file-info {
+            background: #edf2f7;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            display: none;
+        }
+        
+        .file-info.show {
+            display: block;
+        }
+        
+        .btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: transform 0.2s;
+            margin-bottom: 15px;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+        
+        .btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .progress-container {
+            display: none;
+            margin-top: 20px;
+        }
+        
+        .progress-container.show {
+            display: block;
+        }
+        
+        .progress-bar {
+            height: 8px;
+            background: #e2e8f0;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            transition: width 0.3s ease;
+            width: 0%;
+        }
+        
+        .status {
+            text-align: center;
+            color: #4a5568;
+            font-size: 14px;
+        }
+        
+        .results {
+            display: none;
+            margin-top: 30px;
+            padding: 20px;
+            background: #f0fff4;
+            border: 2px solid #9ae6b4;
+            border-radius: 8px;
+        }
+        
+        .results.show {
+            display: block;
+        }
+        
+        .results h3 {
+            color: #22543d;
+            margin-bottom: 15px;
+        }
+        
+        .stat {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #c6f6d5;
+        }
+        
+        .stat:last-child {
+            border-bottom: none;
+        }
+        
+        .stat-label {
+            color: #2d3748;
+            font-weight: 500;
+        }
+        
+        .stat-value {
+            color: #38a169;
+            font-weight: 700;
+        }
+        
+        .error {
+            background: #fff5f5;
+            border: 2px solid #fc8181;
+            color: #742a2a;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            display: none;
+        }
+        
+        .error.show {
+            display: block;
+        }
+        
+        .instructions {
+            background: #fffbeb;
+            border-left: 4px solid #f59e0b;
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+        
+        .instructions h4 {
+            color: #92400e;
+            margin-bottom: 10px;
+        }
+        
+        .instructions ul {
+            margin-left: 20px;
+            color: #78350f;
+        }
+        
+        .instructions li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📄 GST PDF Extraction Tool</h1>
+        <p class="subtitle">Upload GST PDF files and extract structured data automatically</p>
+        
+        <div class="instructions">
+            <h4>🔍 Extraction Capabilities:</h4>
+            <ul>
+                <li>GST Updates & Circulars</li>
+                <li>Case Law & Judicial Decisions</li>
+                <li>FAQ & Q&A Items</li>
+                <li>Ask Us One Questions</li>
+                <li>ITC & Cess Issues</li>
+            </ul>
+        </div>
+        
+        <div class="upload-area" id="uploadArea">
+            <div class="upload-icon">📤</div>
+            <h3>Drop PDF here or click to browse</h3>
+            <p style="color: #a0aec0; margin-top: 10px;">Supports PDF files up to 50MB</p>
+            <input type="file" id="fileInput" accept=".pdf">
+        </div>
+        
+        <div class="file-info" id="fileInfo">
+            <strong>Selected file:</strong> <span id="fileName"></span><br>
+            <strong>Size:</strong> <span id="fileSize"></span>
+        </div>
+        
+        <button class="btn" id="uploadBtn" disabled>Upload & Extract Data</button>
+        
+        <div class="progress-container" id="progressContainer">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <div class="status" id="status">Uploading...</div>
+        </div>
+        
+        <div class="results" id="results">
+            <h3>✅ Extraction Complete!</h3>
+            <div class="stat">
+                <span class="stat-label">Total Articles Extracted:</span>
+                <span class="stat-value" id="totalArticles">0</span>
+            </div>
+            <div class="stat">
+                <span class="stat-label">GST Updates:</span>
+                <span class="stat-value" id="updates">0</span>
+            </div>
+            <div class="stat">
+                <span class="stat-label">Case Laws:</span>
+                <span class="stat-value" id="caseLaws">0</span>
+            </div>
+            <div class="stat">
+                <span class="stat-label">Circulars:</span>
+                <span class="stat-value" id="circulars">0</span>
+            </div>
+            <div class="stat">
+                <span class="stat-label">FAQs:</span>
+                <span class="stat-value" id="faqs">0</span>
+            </div>
+            <div class="stat">
+                <span class="stat-label">Ask Us One:</span>
+                <span class="stat-value" id="askUsOne">0</span>
+            </div>
+            <div class="stat">
+                <span class="stat-label">ITC & Cess:</span>
+                <span class="stat-value" id="itc">0</span>
+            </div>
+        </div>
+        
+        <div class="error" id="error"></div>
+    </div>
+    
+    <script>
+        const uploadArea = document.getElementById('uploadArea');
+        const fileInput = document.getElementById('fileInput');
+        const fileInfo = document.getElementById('fileInfo');
+        const fileName = document.getElementById('fileName');
+        const fileSize = document.getElementById('fileSize');
+        const uploadBtn = document.getElementById('uploadBtn');
+        const progressContainer = document.getElementById('progressContainer');
+        const progressFill = document.getElementById('progressFill');
+        const status = document.getElementById('status');
+        const results = document.getElementById('results');
+        const error = document.getElementById('error');
+        
+        let selectedFile = null;
+        
+        uploadArea.addEventListener('click', () => fileInput.click());
+        
+        uploadArea.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            uploadArea.classList.add('dragover');
+        });
+        
+        uploadArea.addEventListener('dragleave', () => {
+            uploadArea.classList.remove('dragover');
+        });
+        
+        uploadArea.addEventListener('drop', (e) => {
+            e.preventDefault();
+            uploadArea.classList.remove('dragover');
+            const files = e.dataTransfer.files;
+            if (files.length > 0 && files[0].type === 'application/pdf') {
+                handleFileSelect(files[0]);
+            }
+        });
+        
+        fileInput.addEventListener('change', (e) => {
+            if (e.target.files.length > 0) {
+                handleFileSelect(e.target.files[0]);
+            }
+        });
+        
+        function handleFileSelect(file) {
+            selectedFile = file;
+            fileName.textContent = file.name;
+            fileSize.textContent = formatFileSize(file.size);
+            fileInfo.classList.add('show');
+            uploadBtn.disabled = false;
+            results.classList.remove('show');
+            error.classList.remove('show');
+        }
+        
+        function formatFileSize(bytes) {
+            if (bytes < 1024) return bytes + ' bytes';
+            if (bytes < 1024 * 1024) return (bytes / 1024).toFixed(2) + ' KB';
+            return (bytes / (1024 * 1024)).toFixed(2) + ' MB';
+        }
+        
+        uploadBtn.addEventListener('click', async () => {
+            if (!selectedFile) return;
+            
+            const formData = new FormData();
+            formData.append('pdf', selectedFile);
+            
+            uploadBtn.disabled = true;
+            progressContainer.classList.add('show');
+            results.classList.remove('show');
+            error.classList.remove('show');
+            
+            try {
+                // Simulate upload progress
+                let progress = 0;
+                const progressInterval = setInterval(() => {
+                    progress += 10;
+                    if (progress <= 90) {
+                        progressFill.style.width = progress + '%';
+                        status.textContent = 'Uploading... ' + progress + '%';
+                    }
+                }, 200);
+                
+                const response = await fetch('/api/upload', {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                clearInterval(progressInterval);
+                progressFill.style.width = '100%';
+                status.textContent = 'Processing complete!';
+                
+                if (!response.ok) {
+                    throw new Error('Upload failed');
+                }
+                
+                const data = await response.json();
+                
+                // Show results
+                setTimeout(() => {
+                    displayResults(data);
+                    progressContainer.classList.remove('show');
+                    uploadBtn.disabled = false;
+                }, 500);
+                
+            } catch (err) {
+                error.textContent = '❌ Error: ' + err.message;
+                error.classList.add('show');
+                progressContainer.classList.remove('show');
+                uploadBtn.disabled = false;
+            }
+        });
+        
+        function displayResults(data) {
+            document.getElementById('totalArticles').textContent = data.totalArticles || 0;
+            document.getElementById('updates').textContent = data.categories['Updates'] || 0;
+            document.getElementById('caseLaws').textContent = data.categories['Case Law'] || 0;
+            document.getElementById('circulars').textContent = data.categories['Circulars'] || 0;
+            document.getElementById('faqs').textContent = data.categories['FAQ'] || 0;
+            document.getElementById('askUsOne').textContent = data.categories['Ask Us One'] || 0;
+            document.getElementById('itc').textContent = data.categories['ITC & Cess Issues'] || 0;
+            
+            results.classList.add('show');
+        }
+    </script>
+</body>
+</html>
