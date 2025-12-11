@@ -1,7 +1,7 @@
 {
   "sets": [
     {
-      "title": "GST Updates \u2013 October 2025",
+      "title": "GST Updates – October 2025",
       "items": 2,
       "tag": "Latest updates",
       "isNew": true,
@@ -9,24 +9,10 @@
     },
     {
       "title": "Case Law & Judicial Decisions",
-      "items": 5,
+      "items": 4,
       "tag": "Legal References",
       "isNew": false,
       "description": "Important High Court and Supreme Court judgments on GST"
-    },
-    {
-      "title": "FAQ & Q&A",
-      "items": 5,
-      "tag": "Practical Guidance",
-      "isNew": true,
-      "description": "Frequently asked questions with practical answers and case references"
-    },
-    {
-      "title": "Ask Us One",
-      "items": 18,
-      "tag": "Expert Q&A",
-      "isNew": true,
-      "description": "18 practical questions and expert answers from GST professionals"
     },
     {
       "title": "Compliance Circulars",
@@ -37,7 +23,7 @@
     },
     {
       "title": "ITC & Cess Issues",
-      "items": 2,
+      "items": 12,
       "tag": "Guides",
       "isNew": true,
       "description": "Input Tax Credit analysis and compensation cess updates"
@@ -46,7 +32,7 @@
   "articles": [
     {
       "id": "article_cess_scrapped_oct2025",
-      "title": "Cess Scrapped \u2014 Effect on Various Sectors",
+      "title": "Cess Scrapped — Effect on Various Sectors",
       "category": "Updates",
       "date": "20 Oct 2025",
       "author": "CA Ajay Joshi",
@@ -61,7 +47,7 @@
     },
     {
       "id": "article_fraudulent_itc_oct2025",
-      "title": "Fraudulent ITC \u2014 Ambika Traders Case Analysed",
+      "title": "Fraudulent ITC — Ambika Traders Case Analysed",
       "category": "Case Law",
       "date": "20 Oct 2025",
       "author": "CA D. Garg",
@@ -155,419 +141,6 @@
         "Limitation",
         "Madras HC"
       ]
-    },
-    {
-      "id": "faq_antiprof_builder_001",
-      "title": "Anti-profiteering\u2014Flat allotment by builder was cancelled\u2014Action under section 171",
-      "category": "FAQ",
-      "date": "20 Oct 2025",
-      "author": "GST Informations Magazine",
-      "tags": [
-        "Anti-profiteering",
-        "Section 171",
-        "Builder"
-      ],
-      "question": "Where complainant's flat allotment by builder was cancelled and all money was refunded, and Karnataka State Screening Committee found no profiteering as there was no non-passing of ITC or GST rate reduction benefit, whether case did warrant any action under section 171 as it did not involve profiteering?",
-      "answer": "No, case did not warrant action under section 171 as it did not involve profiteering. This has recently been held by Hon'ble New Delhi GSTAT in case of DGAP Vs. Legacy Global Projects (P.) Ltd. that, where complainant's flat allotment by builder was cancelled and all money was refunded, and Karnataka State Screening Committee found no profiteering as there was no non-passing of ITC or GST rate reduction benefit, case did not warrant any action under section 171 as it did not involve profiteering.",
-      "description": "Understanding when anti-profiteering action applies to cancelled flat allotments",
-      "content": "When a builder cancels a flat allotment and refunds all money to the complainant, the question arises whether anti-profiteering action can be taken under Section 171 of the CGST Act. The answer depends on whether profiteering was involved.\n\nAccording to the ruling in DGAP Vs. Legacy Global Projects (P.) Ltd. (decided by New Delhi GSTAT), anti-profiteering action under Section 171 requires proof of profiteering. In this case:\n\n1. The flat allotment was cancelled\n2. All money was refunded to the complainant\n3. The Karnataka State Screening Committee found no profiteering\n4. There was no non-passing of ITC or GST rate reduction benefit\n\nSince no profiteering occurred (as the consumer was fully refunded and not charged any GST or reduced GST), Section 171 action is not warranted.\n\nKey Learning: Anti-profiteering provisions apply when there is actual profiteering, i.e., when the benefit of tax reduction or ITC is not passed to consumers. Mere circumstances that could theoretically constitute profiteering are insufficient without actual evidence of non-passing of benefits."
-    },
-    {
-      "id": "faq_appeal_hearing_002",
-      "title": "Appeal to appellate authority\u2014Dismissal without hearing on merits\u2014Non-receipt of certified copies",
-      "category": "FAQ",
-      "date": "20 Oct 2025",
-      "author": "GST Informations Magazine",
-      "tags": [
-        "Appeal",
-        "Appellate Authority",
-        "Procedural Right"
-      ],
-      "question": "Where appeal against adverse GST order was dismissed by appellate authority solely due to non-receipt of certified copies without hearing on merits, since appeal was within limitation, whether such hyper technical approach was unjustified and matter was to be remanded for decision on merits after affording opportunity of hearing?",
-      "answer": "Yes, such hyper technical approach was unjustified and matter was to be remanded for decision on merits after affording opportunity of hearing. Where appeal against adverse GST order was dismissed by appellate authority solely due to non-receipt of certified copies without hearing on merits, since appeal was within limitation, such hyper technical approach was unjustified and matter was remanded for decision on merits after affording opportunity of hearing. This was the ruling of Hon'ble Jharkhand High Court in case of Sanjeet Kumar Bhagat Vs. Commissioner of State Tax.",
-      "description": "Procedural formalities cannot override substantive right to hearing",
-      "content": "When an appeal is filed before the appellate authority and is within the prescribed limitation period, the authority cannot dismiss it merely on technical or procedural grounds without hearing the merits of the case.\n\nThe Jharkhand High Court ruling in Sanjeet Kumar Bhagat Vs. Commissioner of State Tax establishes that:\n\n1. Technical Requirements: While certified copies are required as part of procedure, their non-receipt cannot be grounds for outright dismissal.\n\n2. Hyper-technical Approach: Courts will not condone dismissals based on purely technical grounds when substantive rights are at stake.\n\n3. Affording Opportunity: The appellate authority must provide adequate opportunity to cure procedural defects and present the case on merits.\n\n4. Remand: If the lower authority acted mechanically without considering merits, the matter should be remanded.\n\nPractical Implication: Taxpayers facing such dismissals should immediately challenge them through writ petitions. Courts readily interfere in such cases to protect the substantive right of appeal."
-    },
-    {
-      "id": "faq_appeal_tribunal_003",
-      "title": "Appeal to appellate tribunal\u2014Non constitution of tribunal\u2014Deferment of recoveries",
-      "category": "FAQ",
-      "date": "20 Oct 2025",
-      "author": "GST Informations Magazine",
-      "tags": [
-        "Appellate Tribunal",
-        "Recovery",
-        "Interim Relief"
-      ],
-      "question": "Where assessee challenged First Appellate Authority's order during non-constitution of GST Appellate Tribunal, since a Trade Circular provides interim relief deferring recoveries if Annexure-1 is submitted and assessee's eligibility is undisputed, whether assessee can secure all benefits by timely filing required form and may appeal or challenge constitutional issues once Tribunal is operational?",
-      "answer": "Yes, assessee could secure all benefits by timely filing required form and may appeal or challenge constitutional issues once Tribunal is operational. This has been held by Hon'ble Bombay High Court in case of Globe Mobility (P.) Ltd. Vs. Union of India that, where petitioner challenged First Appellate Authority's order during non-constitution of GST Appellate Tribunal, since a Trade Circular provides interim relief deferring recoveries if Annexure-1 is submitted and assessee's eligibility is undisputed, assessee can secure all benefits by timely filing required form and may appeal or challenge constitutional issues once Tribunal is operational.",
-      "description": "Interim relief available pending constitution of appellate tribunal",
-      "content": "During periods when the GST Appellate Tribunal is not constituted, assessees can seek interim relief to defer recovery of demands while their appeals are pending.\n\nThe Bombay High Court ruling in Globe Mobility (P.) Ltd. Vs. Union of India provides important guidance:\n\n1. Interim Relief Available: A Trade Circular provides for deferment of recoveries on specific conditions.\n\n2. Required Form: The assessee must timely file Annexure-1 as specified in the circular.\n\n3. Undisputed Eligibility: If the assessee's eligibility for the benefit is undisputed, relief can be granted.\n\n4. Constitutional Issues: Once the Tribunal is operational, the assessee can challenge the order on merits or on constitutional grounds.\n\nStrategy: File Annexure-1 immediately with the proper officer providing:\n- Copy of show cause notice or demand\n- Proof of financial position\n- Declaration of eligibility for the benefit claimed\n\nThis secures the interim relief and keeps constitutional issues alive for later adjudication."
-    },
-    {
-      "id": "faq_assessment_composite_004",
-      "title": "Assessment\u2014Orders prejudicial to rights including remedies under sections 128 and 107",
-      "category": "FAQ",
-      "date": "20 Oct 2025",
-      "author": "GST Informations Magazine",
-      "tags": [
-        "Assessment",
-        "Multiple Tax Periods",
-        "Natural Justice"
-      ],
-      "question": "Where assessees challenged composite notices and assessment orders issued for multiple tax periods, since statutory scheme envisages one show-cause notice or order per tax period, whether composite orders were prejudicial to rights including remedies under sections 128 and 107, thus, such orders covering multiple periods were to be set aside with liberty to respondents to initiate fresh proceedings?",
-      "answer": "Yes, composite orders were prejudicial to rights including remedies under sections 128 and 107, thus, such orders covering multiple periods were to be set aside with liberty to respondents to initiate fresh proceedings. This has recently been held by Hon'ble Andhra Pradesh in case of S J Constructions Vs. Assistant Commissioner that, where petitioners challenged composite notices and assessment orders issued for multiple tax periods, since statutory scheme envisages one show-cause notice or order per tax period, composite orders were prejudicial to rights including remedies under sections 128 and 107, thus, such orders covering multiple periods were to be set aside with liberty to respondents to initiate fresh proceedings.",
-      "description": "Composite orders for multiple periods violate statutory procedure",
-      "content": "The GST law mandates that for each tax period, a separate show-cause notice and assessment order should be issued. Combining multiple periods in a single notice or order violates statutory procedure.\n\nThe Andhra Pradesh High Court ruling in S J Constructions Vs. Assistant Commissioner establishes:\n\n1. Statutory Mandate: The GST law specifically requires one notice and one order per tax period.\n\n2. Prejudicial Effect: Composite orders are prejudicial to the assessee's rights because:\n   - Specific grounds under Section 128 apply to each period\n   - Remedies under Section 107 must relate to specific periods\n   - The limitation period runs separately for each period\n\n3. Invalidity: Composite orders covering multiple periods are invalid and must be set aside.\n\n4. Reassessment: The department is at liberty to issue fresh notices and orders for each period separately.\n\nRed Flag: If you receive a composite assessment order covering multiple tax periods, immediately challenge it through an appeal or writ petition citing this ruling."
-    },
-    {
-      "id": "faq_itc_blocking_005",
-      "title": "Input tax credit\u2014Blocking of input tax credit register\u2014No reasons under Rule 86A",
-      "category": "FAQ",
-      "date": "20 Oct 2025",
-      "author": "GST Informations Magazine",
-      "tags": [
-        "ITC",
-        "Blocking",
-        "Procedural Safeguard"
-      ],
-      "question": "Where petitioner's electronic credit ledger was blocked without recording any reasons under Rule 86A and no post-decisional hearing was provided, whether interference was warranted, so blocking order was set aside subject to bank guarantee, matter remanded with direction to provide opportunity of hearing and pass fresh orders?",
-      "answer": "Yes, interference was warranted, so that blocking order could be set aside. Where petitioner's electronic credit ledger was blocked without recording any reasons under Rule 86A and no post-decisional hearing was provided, interference was warranted, so blocking order was set aside subject to bank guarantee, matter remanded with direction to provide opportunity of hearing and pass fresh orders. This has been held by Hon'ble Bombay High Court in case of Rithwik Projects (P.) Ltd. Vs. Union of India.",
-      "description": "Proper procedure must be followed when blocking ITC",
-      "content": "Blocking of Input Tax Credit (ITC) is a serious action that affects the working capital of businesses. The procedure for blocking must be strictly followed as per Rule 86A.\n\nThe Bombay High Court ruling in Rithwik Projects (P.) Ltd. Vs. Union of India provides important safeguards:\n\n1. Reasons Mandatory: The proper officer must record reasons for blocking the ITC. Blocking without reasons is invalid.\n\n2. Post-decisional Hearing: Even after blocking, the assessee must be given opportunity to be heard before the blocking becomes final.\n\n3. Speaking Order: The order must clearly articulate the reasons why the officer believes fraud or evasion is involved.\n\n4. Proportionality: The quantum blocked must be proportionate to the suspected fraud.\n\n5. Bank Guarantee: As an interim measure, the blocking can be sustained subject to the assessee furnishing a bank guarantee.\n\nAction Plan if ITC is blocked:\n- Immediately file a writ petition or appeal\n- Offer to furnish bank guarantee\n- Request oral hearing to present your case\n- Highlight lack of proper reasons in the blocking order\n\nThis ruling significantly protects taxpayers from arbitrary blocking of ITC."
-    },
-    {
-      "id": "asq001",
-      "title": "ITC on services received from a composite registered person",
-      "category": "Ask Us One",
-      "date": "2025-10-01",
-      "author": "GST Expert Panel",
-      "tags": [
-        "ITC",
-        "Composite",
-        "Services"
-      ],
-      "question": "Can a person having a composite registered person service provider claim ITC on services received from a composite registered person?",
-      "answer": "A composite registered person is not eligible to issue an invoice with tax. Therefore, ITC cannot be claimed on services received from a composite registered person. This is because composite registered persons are specifically excluded from charging GST under their registration.",
-      "description": "ITC eligibility from composite service providers",
-      "content": "A composite registered person is not eligible to issue an invoice with tax. Therefore, ITC cannot be claimed on services received from a composite registered person. This is because composite registered persons are specifically excluded from charging GST under their registration. The law requires that ITC can only be claimed on invoices that contain proper tax charges. Since composite registered persons do not issue tax invoices, the question of claiming ITC does not arise in such transactions."
-    },
-    {
-      "id": "asq002",
-      "title": "Recovery of excess GST from customers",
-      "category": "Ask Us One",
-      "date": "2025-10-01",
-      "author": "GST Expert Panel",
-      "tags": [
-        "Excess GST",
-        "Recovery",
-        "Invoicing"
-      ],
-      "question": "What is the procedure for recovery of excess GST charged from the customers?",
-      "answer": "When excess GST is charged from customers, it should be recovered through debit notes or by issuing revised invoices at the correct GST rate. The excess GST amount should be reflected as a credit to the customer. This can be done within the prescribed time period.",
-      "description": "Procedure for recovering excess GST from customers",
-      "content": "When excess GST is charged from customers, it should be recovered through debit notes or by issuing revised invoices at the correct GST rate. The excess GST amount should be reflected as a credit to the customer. This can be done within the prescribed time period as per GST rules. The process involves: 1) Identifying the excess amount, 2) Issuing a debit note or revised invoice, 3) Communicating to the customer, 4) Recording in books of account, 5) Reflecting in relevant GST returns."
-    },
-    {
-      "id": "asq003",
-      "title": "Tax treatment of commissions in E-commerce",
-      "category": "Ask Us One",
-      "date": "2025-10-01",
-      "author": "GST Expert Panel",
-      "tags": [
-        "E-commerce",
-        "Commission",
-        "Tax Treatment"
-      ],
-      "question": "What is the tax treatment of commissions received by e-commerce platforms from suppliers?",
-      "answer": "Commissions received by e-commerce platforms are subject to GST. These are treated as service charges and the e-commerce platform must charge GST on these commissions based on the applicable rate for their services.",
-      "description": "GST treatment on e-commerce platform commissions",
-      "content": "Commissions received by e-commerce platforms are subject to GST. These are treated as service charges and the e-commerce platform must charge GST on these commissions based on the applicable rate for their services. The rate typically ranges from 5% to 18% depending on the nature of services provided. E-commerce platforms must identify the service category and apply the correct rate. The GST on commissions must be included in the supplier's taxable supply. Proper documentation and invoicing is required for all commission transactions."
-    },
-    {
-      "id": "asq004",
-      "title": "GST applicability on gifts and promotional items",
-      "category": "Ask Us One",
-      "date": "2025-10-01",
-      "author": "GST Expert Panel",
-      "tags": [
-        "Gifts",
-        "Promotional",
-        "GST Applicability"
-      ],
-      "question": "Is GST applicable on gifts and promotional items given by businesses?",
-      "answer": "GST is applicable on gifts and promotional items given by businesses to customers or employees. This is treated as a supply under GST. The cost of such gifts/promotional items should be included in the cost of supply or expenses as applicable.",
-      "description": "GST treatment for business gifts and promotional items",
-      "content": "GST is applicable on gifts and promotional items given by businesses to customers or employees. This is treated as a supply under GST. The cost of such gifts/promotional items should be included in the cost of supply or expenses as applicable. However, if such gifts are given without any business purpose, they may be treated differently. The nature and purpose of the gift determines the GST treatment. Gifts given as part of promotional activities are generally subject to GST. Proper documentation and invoicing is essential for all such transactions."
-    },
-    {
-      "id": "asq005",
-      "title": "ITC on goods returned by customers",
-      "category": "Ask Us One",
-      "date": "2025-10-01",
-      "author": "GST Expert Panel",
-      "tags": [
-        "ITC",
-        "Returns",
-        "Credit Notes"
-      ],
-      "question": "Can ITC be reversed when goods are returned by customers and credit note is issued?",
-      "answer": "Yes, when goods are returned by customers and credit notes are issued, the corresponding ITC must be reversed. The amount of ITC to be reversed equals the ITC claimed on the original supply of the returned goods.",
-      "description": "ITC reversal on customer returns and credit notes",
-      "content": "Yes, when goods are returned by customers and credit notes are issued, the corresponding ITC must be reversed. The amount of ITC to be reversed equals the ITC claimed on the original supply of the returned goods. This is mandatory under GST rules. The reversal should be recorded in the same month as the credit note is issued. Proper documentation including original invoice, return authorization, and credit note must be maintained. The amount of input tax to be reversed is calculated based on the proportion of goods returned to total goods supplied."
-    },
-    {
-      "id": "asq006",
-      "title": "GST on Advance Pricing Agreement (APA)",
-      "category": "Ask Us One",
-      "date": "2025-10-01",
-      "author": "GST Expert Panel",
-      "tags": [
-        "APA",
-        "Transfer Pricing",
-        "GST"
-      ],
-      "question": "How does GST apply to advance pricing agreements between related parties?",
-      "answer": "GST applies to advance pricing agreements based on the arm's length price determined under the APA. The GST is applicable on the agreed price as determined through the APA mechanism. Proper GST documentation must be maintained.",
-      "description": "GST applicability in advance pricing agreements",
-      "content": "GST applies to advance pricing agreements based on the arm's length price determined under the APA. The GST is applicable on the agreed price as determined through the APA mechanism. Proper GST documentation must be maintained. The APA must clearly specify the GST-inclusive or exclusive pricing. Related parties must ensure that the pricing used in actual transactions matches the APA terms. GST invoices must reflect the actual supply price as per APA. All documentation supporting the APA and its implementation must be kept for verification purposes."
-    },
-    {
-      "id": "asq007",
-      "title": "Reverse Charge Mechanism for specific supplies",
-      "category": "Ask Us One",
-      "date": "2025-10-01",
-      "author": "GST Expert Panel",
-      "tags": [
-        "Reverse Charge",
-        "Specific Supplies"
-      ],
-      "question": "When is reverse charge mechanism applicable under GST?",
-      "answer": "Reverse charge is applicable for specific types of supplies such as services received from unregistered persons above a certain threshold, supplies from SEZ units, imports of services, and certain notified supplies. The recipient is responsible for paying the GST.",
-      "description": "Applicability of reverse charge mechanism",
-      "content": "Reverse charge is applicable for specific types of supplies such as services received from unregistered persons above a certain threshold, supplies from SEZ units, imports of services, and certain notified supplies. The recipient is responsible for paying the GST. Conditions for reverse charge include: 1) Specific category of supplies as notified, 2) Exceeding threshold limits where applicable, 3) Proper documentation, 4) Self-assessed GST payment. The recipient must reverse the ITC and file returns accordingly. Proper invoicing and record-keeping is mandatory for reverse charge transactions."
-    },
-    {
-      "id": "asq008",
-      "title": "Treatment of discounts in GST calculations",
-      "category": "Ask Us One",
-      "date": "2025-10-01",
-      "author": "GST Expert Panel",
-      "tags": [
-        "Discounts",
-        "Taxable Value",
-        "Calculation"
-      ],
-      "question": "How are discounts treated in GST calculations?",
-      "answer": "Discounts given at the time of invoice (invoice discounts) reduce the taxable value and GST is calculated on the discounted amount. Discounts given after invoice issuance reduce the GST liability and require credit notes.",
-      "description": "Treatment of invoice and post-invoice discounts in GST",
-      "content": "Discounts given at the time of invoice (invoice discounts) reduce the taxable value and GST is calculated on the discounted amount. Discounts given after invoice issuance reduce the GST liability and require credit notes. The distinction is important: 1) Invoice discounts - shown on the original invoice, reduce the base for GST, 2) Post-invoice discounts - require separate credit note, reduce GST liability. All discounts must be clearly documented. The recipient can claim ITC based on the net amount after discount. Conditional discounts that are unconditionally later paid must be treated as separate supplies."
-    },
-    {
-      "id": "asq009",
-      "title": "ITC eligibility on motor vehicles",
-      "category": "Ask Us One",
-      "date": "2025-10-01",
-      "author": "GST Expert Panel",
-      "tags": [
-        "ITC",
-        "Motor Vehicles",
-        "Restrictions"
-      ],
-      "question": "When can ITC be claimed on motor vehicles under GST?",
-      "answer": "ITC on motor vehicles can only be claimed if the vehicle is used for making taxable supplies. Motor vehicles used for personal or non-business purposes are not eligible for ITC. Specific conditions must be met for eligibility.",
-      "description": "ITC restrictions on motor vehicles",
-      "content": "ITC on motor vehicles can only be claimed if the vehicle is used for making taxable supplies. Motor vehicles used for personal or non-business purposes are not eligible for ITC. Specific conditions must be met for eligibility. The usage of vehicle must be exclusively for business purposes. Vehicles used for personal commuting or occasional business use may not qualify. Detailed records of vehicle usage must be maintained. The ITC eligibility depends on the nature of business and how the vehicle is primarily used. Even commercial vehicles may face partial ITC denial if used for mixed purposes."
-    },
-    {
-      "id": "asq010",
-      "title": "GST on construction services and material",
-      "category": "Ask Us One",
-      "date": "2025-10-01",
-      "author": "GST Expert Panel",
-      "tags": [
-        "Construction",
-        "Services",
-        "Material"
-      ],
-      "question": "What is the GST treatment on construction services and materials?",
-      "answer": "Construction services are subject to 5% GST when labor and material are supplied together. If materials are supplied separately by the employer, only services are taxed at 5%. GST rates on materials depend on the specific material type.",
-      "description": "GST rates for construction services and materials",
-      "content": "Construction services are subject to 5% GST when labor and material are supplied together. If materials are supplied separately by the employer, only services are taxed at 5%. GST rates on materials depend on the specific material type. Construction includes: 1) New construction, 2) Renovation services, 3) Maintenance services. Different rates apply: 5% for labor + material, 12% for certain specialized services, varying rates for materials. ITC is available on input materials and services used in construction. Proper documentation and tax invoices must be issued. The composition depends on the nature and extent of the construction activity."
-    },
-    {
-      "id": "asq011",
-      "title": "Goods in Free Circulation (GIC) and GST",
-      "category": "Ask Us One",
-      "date": "2025-10-01",
-      "author": "GST Expert Panel",
-      "tags": [
-        "Imports",
-        "GIC",
-        "Customs"
-      ],
-      "question": "How is GST applied to goods in free circulation imported into India?",
-      "answer": "Goods in free circulation are subject to GST based on their classification under HSN codes. The GST rate is determined by the type of goods being imported. Customs duties may also apply separately.",
-      "description": "GST treatment for goods in free circulation",
-      "content": "Goods in free circulation are subject to GST based on their classification under HSN codes. The GST rate is determined by the type of goods being imported. Customs duties may also apply separately. The valuation for GST includes: 1) Assessable value of goods, 2) Customs duties, 3) Transportation charges, 4) Insurance charges. GST is calculated on the total assessable value. ITC on GST paid on imports is available if used for taxable supplies. Documentation requirements include invoice, packing list, bill of entry. Different rates apply to different goods categories based on HSN classification."
-    },
-    {
-      "id": "asq012",
-      "title": "Input Tax Credit on rentals and lease payments",
-      "category": "Ask Us One",
-      "date": "2025-10-01",
-      "author": "GST Expert Panel",
-      "tags": [
-        "ITC",
-        "Rentals",
-        "Lease"
-      ],
-      "question": "Can ITC be claimed on rental and lease payments?",
-      "answer": "ITC can be claimed on rental and lease payments if the rented/leased asset is used for making taxable supplies. The asset must be directly used in the business. Partial exemption may reduce available ITC.",
-      "description": "ITC eligibility on rental and lease payments",
-      "content": "ITC can be claimed on rental and lease payments if the rented/leased asset is used for making taxable supplies. The asset must be directly used in the business. Partial exemption may reduce available ITC. The distinction includes: 1) Rented equipment for production - eligible for ITC, 2) Rented premises for exempted activity - not eligible, 3) Mixed usage - proportionate ITC. Documentation required: rental agreement, GST invoices, usage records. If the leased asset is used for both taxable and exempt supplies, proportionate ITC must be calculated. Regular audits may be required to verify legitimate business use of leased assets."
-    },
-    {
-      "id": "asq013",
-      "title": "Treatment of FSA and professional fees under GST",
-      "category": "Ask Us One",
-      "date": "2025-10-01",
-      "author": "GST Expert Panel",
-      "tags": [
-        "FSA",
-        "Professional Fees",
-        "Services"
-      ],
-      "question": "How are Financial Settlement Agreement (FSA) payments and professional fees treated under GST?",
-      "answer": "FSA payments are not subject to GST if they represent compensation or settlement of disputes. Professional fees (legal, accounting, consulting) are subject to GST at 18%. Proper documentation is required to distinguish between the two.",
-      "description": "GST treatment of FSA and professional fees",
-      "content": "FSA payments are not subject to GST if they represent compensation or settlement of disputes. Professional fees (legal, accounting, consulting) are subject to GST at 18%. Proper documentation is required to distinguish between the two. FSA characteristics: settlement value, one-time payment, closure of dispute. Professional fees characteristics: service provision, recurring nature, documented services. The distinction is crucial for tax treatment. Mixed payments (part FSA, part professional fees) must be bifurcated. Supporting documentation such as agreements, invoices, and payment records are essential for establishing the correct tax treatment of payments."
-    },
-    {
-      "id": "asq014",
-      "title": "GST on insurance and claims",
-      "category": "Ask Us One",
-      "date": "2025-10-01",
-      "author": "GST Expert Panel",
-      "tags": [
-        "Insurance",
-        "Claims",
-        "Taxation"
-      ],
-      "question": "What is the GST treatment on insurance premiums and claim settlements?",
-      "answer": "Insurance premiums are subject to 18% GST. Insurance claim settlements are exempt from GST. The ITC on premiums depends on the nature of insurance and business use.",
-      "description": "GST applicability on insurance transactions",
-      "content": "Insurance premiums are subject to 18% GST. Insurance claim settlements are exempt from GST. The ITC on premiums depends on the nature of insurance and business use. Insurance types with different GST implications: 1) General insurance - 18% GST, 2) Life insurance - 18% GST, 3) Marine insurance - 18% GST. Claim settlements are not taxed. ITC is available on insurance for business purposes. Personal insurance typically does not qualify for ITC. Proper invoices and receipts must be maintained. The invoice from insurance company should clearly show the GST amount charged."
-    },
-    {
-      "id": "asq015",
-      "title": "Apportionment of GST in mixed supplies",
-      "category": "Ask Us One",
-      "date": "2025-10-01",
-      "author": "GST Expert Panel",
-      "tags": [
-        "Mixed Supplies",
-        "Apportionment",
-        "ITC"
-      ],
-      "question": "How is GST apportioned when a single invoice contains both taxable and exempt supplies?",
-      "answer": "When a single invoice contains both taxable and exempt supplies, GST must be apportioned based on the value of each type of supply. ITC is available only on the portion relating to taxable supplies.",
-      "description": "GST apportionment in mixed supply situations",
-      "content": "When a single invoice contains both taxable and exempt supplies, GST must be apportioned based on the value of each type of supply. ITC is available only on the portion relating to taxable supplies. Calculation method: 1) Identify taxable and exempt portions, 2) Calculate GST on total invoice, 3) Proportion GST to taxable portion, 4) Claim ITC only on proportionate GST. Example: Service worth 1000 (500 taxable + 500 exempt), GST 18% = 180, ITC = 90. Proper documentation must show the bifurcation. Monthly reconciliation should be done to ensure correct apportionment. If apportionment is not possible, entire supply may be treated as taxable or exempt based on principal supply."
-    },
-    {
-      "id": "asq016",
-      "title": "Force majeure events and GST compliance",
-      "category": "Ask Us One",
-      "date": "2025-10-01",
-      "author": "GST Expert Panel",
-      "tags": [
-        "Force Majeure",
-        "GST Compliance",
-        "Relief"
-      ],
-      "question": "Are there any GST compliance reliefs during force majeure events?",
-      "answer": "GST authorities may grant reliefs for delayed filing or payment during force majeure events. Taxpayers should seek for relief from the GST Officer. The nature and extent of relief depends on the specific circumstances.",
-      "description": "GST relief during force majeure situations",
-      "content": "GST authorities may grant reliefs for delayed filing or payment during force majeure events. Taxpayers should seek for relief from the GST Officer. The nature and extent of relief depends on the specific circumstances. Force majeure includes: natural calamities, wars, epidemics, government actions. Relief available: extension of filing deadlines, waiver of late fees, payment plan arrangements. Procedure: submit application to relevant GST officer with documentary evidence. Common reliefs: delayed GSTR filing, extended payment deadlines, penalty waiver. The relief is discretionary and depends on authority's assessment. Documentation proving force majeure impact must be provided for credible relief claim."
-    },
-    {
-      "id": "asq017",
-      "title": "GST compliance for micro and small enterprises",
-      "category": "Ask Us One",
-      "date": "2025-10-01",
-      "author": "GST Expert Panel",
-      "tags": [
-        "MSE",
-        "Simplified Compliance",
-        "Turnover"
-      ],
-      "question": "What are the simplified GST compliance requirements for micro and small enterprises?",
-      "answer": "Micro and small enterprises with annual turnover below specified limits enjoy simplified GST compliance. They may file GSTR-4 (quarterly) instead of monthly returns. Composition scheme may be available.",
-      "description": "Simplified GST compliance for small businesses",
-      "content": "Micro and small enterprises with annual turnover below specified limits enjoy simplified GST compliance. They may file GSTR-4 (quarterly) instead of monthly returns. Composition scheme may be available. Eligibility criteria: annual turnover below threshold (currently 40 lakhs), no inter-state supplies (if opted for composition). Simplified procedures: 1) GSTR-4 quarterly filing, 2) Fixed tax rate (1-5%), 3) No ITC benefit under composition, 4) Simplified billing. Benefits: reduced compliance burden, lower tax rates, simplified invoicing. Conditions: must maintain basic records, no ITC available, cannot supply other registered persons. Documentation requirements are simplified but still necessary for audit trail and business records."
-    },
-    {
-      "id": "asq018",
-      "title": "Transition from VAT/Excise to GST",
-      "category": "Ask Us One",
-      "date": "2025-10-01",
-      "author": "GST Expert Panel",
-      "tags": [
-        "Transition",
-        "VAT",
-        "ITC Adjustment"
-      ],
-      "question": "How is the transition from VAT/Excise to GST handled for inventory and ITC?",
-      "answer": "Businesses could claim a one-time credit on VAT/Excise paid on opening stock of goods. This was subject to specific conditions and documentation. The transition credit scheme has now ended.",
-      "description": "VAT to GST transition mechanism",
-      "content": "Businesses could claim a one-time credit on VAT/Excise paid on opening stock of goods. This was subject to specific conditions and documentation. The transition credit scheme has now ended. The scheme allowed: 1) Credit on opening stock VAT/Excise, 2) Verification through auditor certificate, 3) Claimed in first month of registration. Key conditions: stock held on April 1, 2017, proper documentation, auditor verification. Documentation required: stock register, invoices of purchase, tax paid documents. The credit was limited to the amount of tax actually paid. Proper records and certificates were mandatory. The scheme was time-bound and is no longer available for new claimants, but affected businesses during the transition period."
-    },
-    {
-      "id": "upd002",
-      "title": "Compensation Cess withdrawn; stranded credits post 22.9.2025",
-      "category": "Updates",
-      "date": "2025-10-20",
-      "author": "GST Council / CBIC",
-      "description": "CBIC clarified that compensation cess removal from 22.9.2025 leaves dealers with stranded credit on old stock; no refund or cross-utilisation permitted.",
-      "content": "After the 56th GST Council meeting, compensation cess was removed for many items effective 22.9.2025. Dealers holding inventory purchased with cess are left with stranded credit because cess can only be used to pay cess. CBIC indicated there is no provision to refund or carry forward this cess credit to CGST/SGST/IGST. The loss particularly hits auto dealers (FADA estimates significant crores tied up in unsold inventory) and beverage distributors whose 12% cess paid on stock becomes a sunk cost. Businesses must treat this credit as cost unless cess liability exists.",
-      "tags": [
-        "compensation cess",
-        "rate change",
-        "inventory",
-        "stranded ITC"
-      ]
-    },
-    {
-      "id": "itc001",
-      "title": "Stranded compensation cess ITC on inventory after rate rationalisation",
-      "category": "ITC & Cess Issues",
-      "date": "2025-10-20",
-      "author": "GST Informations",
-      "description": "Dealers cannot use compensation cess ITC on stock after cess withdrawal; credit cannot be set off against CGST/SGST/IGST.",
-      "content": "With compensation cess withdrawn for many goods, dealers holding inventory with cess paid cannot utilise that ITC because the levy must be used only against cess liability. CBIC clarified there is no legal route to cross-utilise or refund this cess credit. The automobile sector alone faces an estimated multi-thousand crore working capital hit on unsold units; beverage distributors see their 12% cess on sugary drinks become a sunk cost.",
-      "tags": [
-        "compensation cess",
-        "ITC",
-        "inventory",
-        "auto sector"
-      ]
-    },
-    {
-      "id": "itc002",
-      "title": "Refund eligibility for unutilised compensation cess ITC",
-      "category": "ITC & Cess Issues",
-      "date": "2025-10-20",
-      "author": "GST Informations",
-      "description": "Refund of compensation cess ITC is limited to zero-rated supplies or inverted duty; business closure or rate withdrawal does not allow refund.",
-      "content": "Section 11 of the Compensation Cess Act read with section 16 of the CGST Act permits availing ITC on cess, but it can be used only to pay cess. Section 54(3) allows refund of unutilised ITC only for zero-rated supplies or inverted duty. Courts (e.g., Union of India vs SICPA India (P.) Ltd.) have reiterated that refund outside these two scenarios is impermissible; business closure or rate withdrawal is not a ground. Thus stranded cess credit after levy withdrawal generally cannot be refunded.",
-      "tags": [
-        "refund",
-        "compensation cess",
-        "ITC",
-        "section 54(3)",
-        "zero-rated"
-      ]
     }
   ],
   "trending": [
@@ -602,7 +175,7 @@
       "name": "GST Compliance Suite",
       "category": "Compliance",
       "description": "Complete GST compliance tools and checklist",
-      "price": "\u20b94,999",
+      "price": "₹4,999",
       "savings": "Save 20%",
       "url": "https://profinss.com/products/gst-compliance/"
     },
@@ -610,7 +183,7 @@
       "name": "ITC & Refund Guide",
       "category": "Educational",
       "description": "Comprehensive guide on Input Tax Credit and refund procedures",
-      "price": "\u20b92,999",
+      "price": "₹2,999",
       "savings": "",
       "url": "https://profinss.com/products/itc-guide/"
     },
@@ -618,7 +191,7 @@
       "name": "GST Case Law Library",
       "category": "Legal",
       "description": "Curated library of important GST case law and judicial decisions",
-      "price": "\u20b95,999",
+      "price": "₹5,999",
       "savings": "Save 15%",
       "url": "https://profinss.com/products/case-law-library/"
     }
@@ -634,9 +207,5 @@
       "message": "The compensation cess scrapping effective 22.9.2025 affects your existing inventory. As per CBIC clarification, no refund or adjustment will be provided for cess already paid on inventory held as of that date. The cess credit can only be adjusted against cess liability, and cannot be set-off against CGST/SGST/IGST.",
       "time": "10:31 AM"
     }
-  ],
-  "counts": {
-    "articles": 34,
-    "sets": 5
-  }
+  ]
 }
